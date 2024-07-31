@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Elements</title>
+    <meta name="author" content="Berbin MS">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Trek and Tour</h1>
+        <hr>
+        <nav>
+            <p>
+                <a href="index.html">Media Elements</a>&nbsp;&nbsp;&nbsp;
+                <a href="#forms">Form Elements</a>
+            </p>
+        </nav>
+    </header>
+    <hr>
+    <section id="forms">
+        <fieldset>
+            <legend>Visa Application Form</legend>
+        <form action="submit.php" method="post"></form>
+        <h4>Personal Information</h4>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" required autofocus autocomplete="on" placeholder="Your name"><br>
+        <label for="dob">Date of Birth: </label>
+        <input type="date" id="dob" name="dob" required><br>
+        <label for="gender">Gender: </label>
+        <input type="radio" id="male" name="gender" required value="male">Male
+        <input type="radio" id="female" name="gender" required value="female">Female
+        <label for="passportnumber">Passport Number:</label>
+        <input type="text" id="passportnumber" name="passportnumber" required><br>
+        <h4>Contact Information</h4>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phone">Phone Number: </label>
+        <input type="tel" id="phone" name="phone" required><br>
+        <label for="address">Address: </label>
+        <textarea name="address" id="address" cols="30" rows="5" required></textarea><br>
+        <h4>Travel Information</h4>
+        <label for="destination">Destination: </label>
+        <input type="text" id="destination" name="destination" required><br>
+        <label for="purpose_of_travel">Purpose of Travel: </label>
+        <select name="purpose_of_travel" id="purpose_of_travel" required>
+            <option value="tourism">Tourism</option>
+            <option value="business">Business</option>
+            <option value="study">Study</option>
+            <option value="work">Work</option>
+        </select><br>
+        <label for="arrival">Date of arrival: </label>
+        <input type="date" id="arrival" name="arrival" required><br>
+        <label for="departure">Date of departure: </label>
+        <input type="date" id="departure" name="departure" required><br>
+        <label for="duration">Duration of Stay: </label>
+        <input type="number" id="duration" name="duration" required min="1" max="365" value="30"><br>
+        <h4>Documents</h4>
+        <label for="passport">Passport: </label>
+        <input type="file" id="passport" name="passport" accept="image/*" required><br><br>
+        <div class="submit-container">
+            <button type="submit" class="submit-button">Submit</button>
+        </div>
+        </fieldset>
+    </section>
+</body>
+</html
