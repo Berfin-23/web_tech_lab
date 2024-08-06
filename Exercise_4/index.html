@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-image">
+    <header class="title">
+        <section class="logo-name">
+            <img src="assets/logo.png" alt="logo" width="75px" height="75px">
+            <h1 class="name">Trek and Tour</h1>
+        </section>
+        <nav>
+            <ul class="nav__ul">
+                <li><a class="nav__a" href="index.html">Home</a></li>
+                <li><a class="nav__a" href="#gallery">Gallery</a></li>
+                <li><a class="nav__a" href="#visa">Visa</a></li>
+                <li><a class="nav__a" href="#whyus">Why us?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="body">
+    <div class="container">
+        <div id="loginForm" class="form-container">
+            <h2>Login</h2>
+            <form>
+                <label for="loginName">Name</label>
+                <input type="text" id="loginName" name="name" required>
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" name="password" required>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" id="showRegister">Register</a></p>
+            </form>
+        </div>
+        <div id="registerForm" class="form-container hidden">
+            <h2>Register</h2>
+            <form>
+                <label for="registerName">Name</label>
+                <input type="text" id="registerName" name="name" required>
+                <label for="registerEmail">Email</label>
+                <input type="email" id="registerEmail" name="email" required>
+                <label for="registerPassword">Password</label>
+                <input type="password" id="registerPassword" name="password" required>
+                <button type="submit">Register</button>
+                <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+            </form>
+        </div>
+    </div>
+</section>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
